@@ -1,0 +1,23 @@
+name: Windows tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Core smoke test
+        shell: powershell
+        run: .\tests\smoke.ps1
+      - name: Installer smoke test
+        shell: powershell
+        run: .\tests\installer-smoke.ps1
+      - name: Installer safety test
+        shell: powershell
+        run: .\tests\installer-safety.ps1
+      - name: Release package smoke test
+        shell: powershell
+        run: .\tests\release-smoke.ps1

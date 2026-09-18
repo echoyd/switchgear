@@ -1,0 +1,20 @@
+# This repository contains public product files only. Internal project records
+# and local release outputs must never enter the public Git history.
+AGENTS.md
+项目转接说明.md
+开发日志.md
+验收记录.md
+交付/
+运行程序/
+release-staging/
+*.zip
+*.log
+*.user
+.switchgear-install.json
+state.json
+auth.json
+**/auth.json
+**/sessions/
+**/logs/
+**/credentials/
+**/codex-home/

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Switchgear"
+  short_description: "Guide safe Switchgear profile setup on Windows"
+  default_prompt: "Use $profile-switchgear to set up or check an isolated Codex profile with the Switchgear command on Windows."
